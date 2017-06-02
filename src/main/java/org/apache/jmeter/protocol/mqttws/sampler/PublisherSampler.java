@@ -330,11 +330,6 @@ public class PublisherSampler extends BaseMQTTSampler implements ThreadListener,
 	public void threadFinished() {
 		log.debug("Thread ended " + new Date());
 		//System.out.println("Thread ended: " + producer.toString());		
-		if (producer != null) {
-			producer.close(context);
-			
-			
-		}
 	}
 
 	// -------------------------Sample------------------------------------//
